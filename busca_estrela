@@ -10,27 +10,18 @@ typedef struct Estado {
 
 typedef struct Estado Estado;
 
-int h (Estado Entrada) {
+int h (Estado Entrada, Estado Final) {
     int h = 0;
     int i,j;
     for(i = 0; i < 3; i++){
-        for(i = 0; j < 3; j++) {
-            
+        for(j = 0; j < 3; j++) {
+            h += abs()
         }
     }
 }
 
 int main() {
-    Estado Inicial;
-    Inicial.Valor[0][0] = 0;
-    Inicial.Valor[0][1] = 1;
-    Inicial.Valor[0][2] = 2;
-    Inicial.Valor[1][0] = 3;
-    Inicial.Valor[1][1] = 4;
-    Inicial.Valor[1][2] = 5;
-    Inicial.Valor[2][0] = 6;
-    Inicial.Valor[2][1] = 7;
-    Inicial.Valor[2][2] = 8;
+    Estado *Inicial = malloc(sizeof(Estado));
     Inicial.custo = h(Inicial);
     Inicial.percorrido = 0;
     printf("%d", Inicial.custo);
