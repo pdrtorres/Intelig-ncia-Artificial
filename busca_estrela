@@ -1,1 +1,20 @@
+#include <stdlib.h>
+#include <stdio.h>
 
+// definição Marcos
+typedef Struct Estado {
+    int x,y,valor;
+}
+
+// definição Pedro
+typedef Struct Estado {
+    int V[9];
+    int h_x;
+    int g_x;
+}
+
+
+int main() {
+
+    return 0;
+}
