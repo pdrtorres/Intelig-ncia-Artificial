@@ -1,11 +1,39 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
-typedef Struct Estado {
-    int *
+typedef struct Estado {
+    int Valor[3][3]; // dados das posições
+    int custo; // valor do custo total do estado
+    int percorrido; // armazena se o estado já foi percorrido
+};
+
+typedef struct Estado Estado;
+
+int h (Estado Entrada) {
+    int h = 0;
+    int i,j;
+    for(i = 0; i < 3; i++){
+        for(i = 0; j < 3; j++) {
+            
+        }
+    }
 }
-int main() {
 
+int main() {
+    Estado Inicial;
+    Inicial.Valor[0][0] = 0;
+    Inicial.Valor[0][1] = 1;
+    Inicial.Valor[0][2] = 2;
+    Inicial.Valor[1][0] = 3;
+    Inicial.Valor[1][1] = 4;
+    Inicial.Valor[1][2] = 5;
+    Inicial.Valor[2][0] = 6;
+    Inicial.Valor[2][1] = 7;
+    Inicial.Valor[2][2] = 8;
+    Inicial.custo = h(Inicial);
+    Inicial.percorrido = 0;
+    printf("%d", Inicial.custo);
     return 0;
 }
 
